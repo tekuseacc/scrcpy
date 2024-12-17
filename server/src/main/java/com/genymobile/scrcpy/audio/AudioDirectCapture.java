@@ -40,7 +40,7 @@ public class AudioDirectCapture implements AudioCapture {
             case OUTPUT:
                 return MediaRecorder.AudioSource.REMOTE_SUBMIX;
             case MIC:
-                return MediaRecorder.AudioSource.MIC;
+                return MediaRecorder.AudioSource.UNPROCESSED;
             default:
                 throw new IllegalArgumentException("Unsupported audio source: " + audioSource);
         }
